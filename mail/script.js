@@ -24,12 +24,13 @@ const partyLeads = [
 const userEmail = prompt("Inserisci la tua mail");
 let emailFound = false;
 
-// 3- controllo se l'utente è presente in lista e mostro messaggio di conferma/errore.
+// 3- controllo se l'utente è presente in lista
 for (let i = 0; i < partyLeads.length; i++) {
   currentEmailLead = partyLeads[i];
   if (currentEmailLead === userEmail) emailFound = true;
 }
-//4- mostro messaggio di conferma/errore.. fuori dal for, altrimenti si ripete ad ogni ciclo
+//4- mostro messaggio di conferma/errore..
+// fuori dal for, altrimenti si ripete ad ogni ciclo
 if (emailFound) {
   alert("Congratulazioni! Sei in lista!");
 } else {
